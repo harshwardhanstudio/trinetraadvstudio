@@ -187,4 +187,22 @@ nav a{
     font-size:26px;
 }
 
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo img{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.logo span{
+    font-size:34px;
+    font-weight:800;
+    color:#d4af37;
+    letter-spacing:2px;
 }
