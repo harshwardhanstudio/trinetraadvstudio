@@ -1773,3 +1773,136 @@ header{
     }
 
 }
+/* ==================================
+ HERO V2
+================================== */
+
+.hero{
+    position:relative;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    overflow:hidden;
+}
+
+.hero-overlay{
+    position:absolute;
+    inset:0;
+    background:
+    radial-gradient(circle at top,#d4af3720,transparent 60%),
+    linear-gradient(#00000090,#00000090);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    max-width:900px;
+    padding:20px;
+}
+
+.hero h5{
+    color:#d4af37;
+    letter-spacing:4px;
+    margin-bottom:20px;
+}
+
+.hero-title{
+    font-size:70px;
+    line-height:1.1;
+    color:white;
+}
+
+.hero-title span{
+    display:block;
+    color:#d4af37;
+}
+
+.hero p{
+    margin:35px auto;
+    max-width:700px;
+    color:#ddd;
+    font-size:19px;
+    line-height:1.8;
+}
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.btn-outline{
+    background:transparent;
+    border:2px solid #d4af37;
+}
+
+.btn-outline:hover{
+    background:#d4af37;
+    color:black;
+}
+
+.scroll-indicator{
+    position:absolute;
+    bottom:35px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.scroll-indicator span{
+    width:28px;
+    height:45px;
+    border:2px solid white;
+    border-radius:30px;
+    display:block;
+    position:relative;
+}
+
+.scroll-indicator span::before{
+    content:"";
+    width:6px;
+    height:6px;
+    background:white;
+    border-radius:50%;
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    top:8px;
+    animation:scrollDown 2s infinite;
+}
+
+@keyframes scrollDown{
+
+0%{
+opacity:0;
+top:8px;
+}
+
+50%{
+opacity:1;
+}
+
+100%{
+opacity:0;
+top:24px;
+}
+
+}
+
+@media(max-width:768px){
+
+.hero-title{
+
+font-size:42px;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+}
+
+}
