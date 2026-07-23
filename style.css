@@ -44,17 +44,11 @@ html{
 }
 
 body{
-
-    font-family:'Poppins',sans-serif;
-
-    background:var(--bg);
-
+    background:#060606;
     color:#fff;
-
     overflow-x:hidden;
-
     line-height:1.7;
-
+    position:relative;
 }
 /* ===== Premium Sparkle Background ===== */
 
